@@ -93,6 +93,11 @@ ul {
   align-items: center;
   justify-content: center;
   z-index: 2000;
+  transition: all 0.7s;
+}
+
+.preloader.fade-out {
+  opacity: 0;
 }
 
 .preloader.hidden {
