@@ -1,0 +1,124 @@
+
+@media (max-width: 1200px) {
+    .why-us .container {
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+    }
+
+    .why-us .content {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    p,a,span {
+        font-size: 15px !important;
+    }
+
+    h1 {
+        font-size: 40px !important;
+    }
+
+    h2 {
+        font-size: 30px !important;
+    }
+
+    h3 {
+        font-size: 24px !important;
+    }
+
+    h4 {
+        font-size: 20px !important;
+    }
+
+    h5 {
+        font-size: 18px !important;
+    }
+
+    h6 {
+        font-size: 16px !important;
+    }
+
+    .landing nav .logo img {
+        width: 110px;
+    }
+
+    .about .qualities-box {
+        flex-direction: column;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+
+    .menu-btn {
+        display: block;
+    }
+
+    .landing nav ul {
+        display: none;
+        position: absolute;
+        top: 114px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background-color: var(--titles-clr);
+    }
+
+    .landing nav ul.visible {
+        display: block;
+
+    }
+
+    .landing nav ul li {
+        width: 100%;
+    }
+
+    .landing nav ul li a {
+        width: 100%;
+        padding: 1rem 3rem !important;
+    }
+
+    .landing nav ul li:last-of-type a {
+        display: block;
+        margin-left: 0;
+        text-transform: none;
+        font-weight: normal;
+        color: #fff;
+        background-color: transparent;
+        border-radius: 0;
+    }
+
+    .landing nav ul li:last-of-type a:hover {
+        color: var(--first-green-clr);
+    }
+
+    .landing nav ul li a.active {
+        background-color: rgba(255, 255, 255, 0.31);
+    }
+
+    .landing nav ul li:not(:last-of-type) a::before {
+        display: none;
+    }
+
+    .about .about-us {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .about .about-us .image {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+        .why-us .qualities .quality {
+        width: 100%;
+    }
+}
+
+
+
+
+
