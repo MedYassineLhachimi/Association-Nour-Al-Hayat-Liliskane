@@ -209,6 +209,11 @@ ul {
   background-color: var(--first-green-clr);
 }
 
+.contact .contact-form form input:hover,
+.contact .contact-form form textarea:hover {
+  border-color: var(--second-green-clr);
+}
+
 footer .informations div:nth-child(2) a:hover {
   color: var(--second-green-clr);
 }
@@ -237,7 +242,7 @@ footer .informations div:nth-child(2) a:hover {
 
 .landing .container {
   position: relative;
-  height: 100vh;
+  height: 100%;
   z-index: 10;
 }
 
@@ -284,7 +289,7 @@ footer .informations div:nth-child(2) a:hover {
 .landing .content {
   width: 100%;
   position: absolute;
-  top: calc(50% - 90px);
+  top: calc(50%);
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -453,7 +458,7 @@ footer .informations div:nth-child(2) a:hover {
 
 /* Projects Section */
 
-/* Contact */
+/* Contact-acceuil Section */
 
 .contact-acceuil {
   position: relative;
@@ -488,7 +493,7 @@ footer .informations div:nth-child(2) a:hover {
   color: #fff;
 }
 
-/* Contact */
+/* Contact-acceuil Section */
 
 /* Why Section */
 
@@ -553,6 +558,163 @@ footer .informations div:nth-child(2) a:hover {
 }
 
 /* Why Section */
+
+/* Contact */
+
+.contact {
+  position: relative;
+  background-color: var(--section-clr);
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+.contact .container {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+.contact .content {
+  width: 50%;
+}
+
+.contact .content h2 {
+  max-width: 98%;
+  margin-top: 1rem;
+}
+
+.contact .content p {
+  margin-top: 1rem;
+}
+
+.contact .contact-form {
+  width: 50%;
+}
+
+.contact .contact-form form {
+  padding: 2.5rem;
+  box-shadow: 8px 0px 20px 4px rgba(0, 0, 0, 0.06);
+  background-color: #fff;
+  border-radius: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px 20px;
+}
+
+.contact .contact-form form .field {
+  width: calc(50% - 20px);
+}
+
+.contact .contact-form form .field:nth-child(5) {
+  width: 100%;
+}
+
+.contact .contact-form form label {
+  display: block;
+  font-weight: 500;
+  color: var(--titles-clr);
+}
+
+.contact .contact-form form .field:not(:last-of-type) input,
+.contact .contact-form form .field:not(:last-of-type) textarea {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px 12px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #B2BEB1;
+  transition: all var(--hover-trans-time);
+}
+
+.contact .contact-form form .field:last-of-type input {
+  padding: 12px 14px;
+  border: none; 
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer; 
+}
+
+.contact .contact-form form textarea {
+  height: 118px;
+  resize: none;
+}
+
+/* Contact */
+
+/* Find Section */
+
+.find-us {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: #fff;
+}
+
+.find-us .big-title {
+  text-align: center;
+}
+
+.find-us .content h1 {
+  max-width: 300px;
+  margin-top: 1rem;
+}
+
+.find-us .content p {
+  margin-top: 1rem;
+  max-width: 460px;
+}
+
+.find-us .informations {
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.find-us .informations .info {
+  width: calc(33% - 16px);
+  padding: 40px;
+  background-color: var(--section-clr);
+  border-radius: 24px;
+}
+
+.find-us .informations .info .icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+  background-color: var(--titles-clr);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.find-us .informations .info .icon svg {
+  width: 32px;
+  height: 32px;
+  fill: var(--second-green-clr);
+}
+
+.find-us .informations .info h5 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.find-us .informations .info p {
+  text-transform: lowercase;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.find-us iframe {
+  width: 100%;
+  margin-top: 4rem;
+}
+
+
+/* Find Section */
 
 /* Footer */
 
