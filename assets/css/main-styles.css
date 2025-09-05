@@ -220,25 +220,19 @@ footer .informations div:nth-child(2) a:hover {
 
 .landing {
   position: relative;
-  height: 100vh;
-  background-image: url(../images/Acceuil-landing.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
-.landing::before {
-  content: "";
-  position: absolute;
-  bottom: -120px;
-  left: 0;
-  width: 100%;
-  height: 250px;
-  --c: 60;
-  mask: radial-gradient(calc(var(--c)*1%) 100% at 50% calc(-100%*cos(asin(50/var(--c)))),#0000 99%,#000);
-  clip-path: ellipse(calc(var(--c)*1%) 100% at top);
-  background: var(--section-clr);
-  z-index: 10;
+.landing.landing-acceuil {
+  background-image: url(../images/Acceuil-landing.jpg);
+  height: 85vh;
+}
+
+.landing.landing-contact {
+  background-image: url(../images/Contact-landing.jpg);
+  height: 70vh;
 }
 
 .landing .container {
@@ -290,7 +284,7 @@ footer .informations div:nth-child(2) a:hover {
 .landing .content {
   width: 100%;
   position: absolute;
-  top: calc(50% - 50px);
+  top: calc(50% - 90px);
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -311,6 +305,16 @@ footer .informations div:nth-child(2) a:hover {
   color: #fff;
 }
 
+.landing > svg{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  fill: var(--section-clr);
+  z-index: 10;
+}
+
 /* Landing Section */
 
 /* About Section */
@@ -318,11 +322,12 @@ footer .informations div:nth-child(2) a:hover {
 .about {
   position: relative;
   background-color: var(--section-clr);
+  padding-bottom: var(--section-padding);
 }
 
 .about .qualities-box {
   position: relative;
-  transform: translateY(-200px);
+  transform: translateY(-100px);
   padding: 2.125rem 3.125rem;
   background-color: #fff;
   border-radius: 24px;
@@ -366,7 +371,6 @@ footer .informations div:nth-child(2) a:hover {
 }
 
 .about .about-us {
-  transform: translateY(-100px);
   display: flex;
   gap: 75px;
 }
@@ -451,7 +455,7 @@ footer .informations div:nth-child(2) a:hover {
 
 /* Contact */
 
-.contact {
+.contact-acceuil {
   position: relative;
   background-image: url(../images/Acceuil-contact.png);
   background-position: center;
@@ -459,11 +463,11 @@ footer .informations div:nth-child(2) a:hover {
   padding-bottom: var(--section-padding);
 }
 
-.contact .overlay {
+.contact-acceuil .overlay {
   background-color: rgba(15, 23, 42, 0.5);
 }
 
-.contact .container {
+.contact-acceuil .container {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -473,12 +477,12 @@ footer .informations div:nth-child(2) a:hover {
   z-index: 10;
 }
 
-.contact .container h3 {
+.contact-acceuil .container h3 {
   font-size: 2.625rem;
   color: #fff;
 }
 
-.contact .container p {
+.contact-acceuil .container p {
   max-width: 600px;
   margin-top: 10px;
   color: #fff;
