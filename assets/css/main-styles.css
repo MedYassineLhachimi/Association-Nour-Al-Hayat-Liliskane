@@ -192,6 +192,40 @@ ul {
   color: var(--titles-clr);
 }
 
+.swiper-pagination-bullet-active {
+  background-color: var(--second-green-clr) !important;
+}
+
+.swiper-button-next {
+  position: absolute;
+  right: 0 !important;
+}
+
+.swiper-button-prev {
+  position: absolute;
+  left: 0 !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  opacity: 0.7;
+  transition: all var(--hover-trans-time);
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  opacity: 0.8;
+}
+
+
+.swiper-button-next svg,
+.swiper-button-prev svg {
+  background-color: var(--section-clr);
+  padding: 0.4rem;
+  color: var(--titles-clr) !important;
+}
+
+
 /* Composants */
 
 /* Effects Hover */
@@ -410,6 +444,7 @@ footer .informations div:nth-child(2) a:hover {
 
 .projets {
   padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
 }
 
 .projets .container .big-title {
@@ -417,21 +452,26 @@ footer .informations div:nth-child(2) a:hover {
 }
 
 .projets .container .projets-box {
-  margin-top: 6rem;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  overflow: hidden;
+  position: relative;
+  margin-top: 4rem;
+}
+
+.projets .container .projets-box .projet {
+  position: relative;
+  padding: 2rem;
+  width: 500px;
+  height:  880px;
+  aspect-ratio: 3/4;
 }
 
 .projets .container .projets-box .projet > img {
-  min-width: 350px;
+  width: 100%;
   border-radius: 24px 24px 150px 150px;
 }
 
 .projets .container .projet .content {
   width: 340px;
-  height: 350px;
+  min-height: 350px;
   margin: 0 auto;
   padding: 2.5rem 1.75rem;
   transform: translateY(-150px);
@@ -594,7 +634,7 @@ footer .informations div:nth-child(2) a:hover {
 .contact .contact-form form {
   padding: 2.5rem;
   box-shadow: 8px 0px 20px 4px rgba(0, 0, 0, 0.06);
-  background-color: #fff;
+  background-color: var(--section-clr);
   border-radius: 24px;
   display: flex;
   flex-wrap: wrap;
@@ -621,6 +661,7 @@ footer .informations div:nth-child(2) a:hover {
   width: 100%;
   margin-top: 10px;
   padding: 12px 12px;
+  background-color: var(--section-clr);
   border-radius: 5px;
   outline: none;
   border: 1px solid #B2BEB1;
@@ -668,12 +709,14 @@ footer .informations div:nth-child(2) a:hover {
   margin-top: 5rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 .find-us .informations .info {
-  width: calc(33% - 16px);
+  width: 350px;
+  height: 250px;
   padding: 40px;
   background-color: var(--section-clr);
   border-radius: 24px;

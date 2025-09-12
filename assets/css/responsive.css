@@ -48,7 +48,15 @@
         flex-direction: column;
     }
 
+    .contact .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
+    .contact .container .content,
+    .contact .container .contact-form {
+        width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -65,6 +73,7 @@
         width: 100%;
         flex-direction: column;
         background-color: var(--titles-clr);
+        z-index: 3000;
     }
 
     .landing nav ul.visible {
@@ -113,8 +122,19 @@
         margin: 0 auto;
     }
 
-        .why-us .qualities .quality {
+    .why-us .qualities .quality {
         width: 100%;
+    }
+
+    .projets .container .projets-box .projet {
+        width: 400px;
+        height:  780px;
+    }
+
+    .projets .container .projet .content {
+        width: 280px;
+        min-height: 250px;
+        padding: 2rem;
     }
 }
 
