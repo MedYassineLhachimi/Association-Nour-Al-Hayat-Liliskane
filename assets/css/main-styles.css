@@ -16,7 +16,9 @@
   --section-clr: #EDFBE2;
   --light-black-clr: #222222;
   --hover-trans-time: 0.3s;
-  --section-padding: 100px
+  --section-padding: 100px;
+  scroll-behavior: smooth;
+
 }
 
 body {
