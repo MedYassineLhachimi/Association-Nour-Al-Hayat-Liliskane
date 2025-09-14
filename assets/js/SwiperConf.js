@@ -4,7 +4,8 @@ window.addEventListener('load',function(){
   centeredSlides: true,
   initialSlide: 4,
   loop: true,
-  speed: 600,
+  speed: 800,
+  autoplay: true,
   preventClicks: true,
   slidesPerView: "auto",
   coverflowEffect: {
