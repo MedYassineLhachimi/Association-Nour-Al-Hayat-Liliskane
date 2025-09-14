@@ -1,5 +1,5 @@
-
-let swiper = new Swiper (".swiper", { effect: "coverflow",
+window.addEventListener('load',function(){
+  let swiper = new Swiper (".swiper", { effect: "coverflow",
   grabCursor: true,
   centeredSlides: true,
   initialSlide: 4,
@@ -27,4 +27,5 @@ let swiper = new Swiper (".swiper", { effect: "coverflow",
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+});
 });

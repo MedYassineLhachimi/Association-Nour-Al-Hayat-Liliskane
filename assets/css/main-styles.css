@@ -18,7 +18,7 @@
   --hover-trans-time: 0.3s;
   --section-padding: 100px;
   scroll-behavior: smooth;
-
+  overflow-x: hidden;
 }
 
 body {
@@ -267,13 +267,30 @@ footer .informations div:nth-child(2) a:hover {
 }
 
 .landing.landing-acceuil {
-  background-image: url(../images/Acceuil-landing.jpg);
   height: 85vh;
 }
 
 .landing.landing-contact {
   background-image: url(../images/Contact-landing.jpg);
   height: 70vh;
+}
+
+.landing .slide-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(1.05);
+  transition: all 1.6s;
+}
+
+.landing .slide-image.active {
+  transform: scale(1);
+  visibility: visible;
+  opacity: 1;
 }
 
 .landing .container {
@@ -504,8 +521,11 @@ footer .informations div:nth-child(2) a:hover {
 
 .contact-acceuil {
   position: relative;
-  background-image: url(../images/Acceuil-contact.png);
+  background-image: url(../images/Accueil-contact.png);
   background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
 }
